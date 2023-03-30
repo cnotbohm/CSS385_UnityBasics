@@ -2,4 +2,4 @@ The GitHub repository for this page is at [https://github.com/cnotbohm/CSS385_Un
 
 The corresponding web page is at [https://cnotbohm.github.io/CSS385_UnityBasics/](https://cnotbohm.github.io/CSS385_UnityBasics/)
 
-The WebGL build of a simple Unity project is at [https://cnotbohm.github.io/CSS385_UnityBasics/tree/main/docs/WebGLBuild](https://cnotbohm.github.io/CSS385_UnityBasics/tree/main/docs/WebGLBuild)
+The WebGL build of a simple Unity project is at [https://cnotbohm.github.io/CSS385_UnityBasics/tree/main/docs/WebGLBuild/](https://cnotbohm.github.io/CSS385_UnityBasics/tree/main/docs/WebGLBuild/)
