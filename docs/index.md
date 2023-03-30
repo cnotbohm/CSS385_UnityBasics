@@ -1,7 +1,5 @@
-The GitHub repository for this page is at [https://github.com/pisan385/unity/](https://github.com/pisan385/unity/) under docs/ folder
+The GitHub repository for this page is at [https://github.com/cnotbohm/CSS385_UnityBasics](https://github.com/cnotbohm/CSS385_UnityBasics) 
 
-The corresponding web page is at [https://pisan385.github.io/unity/index.html](https://pisan385.github.io/unity/index.html)
+The corresponding web page is at [https://cnotbohm.github.io/CSS385_UnityBasics/](https://cnotbohm.github.io/CSS385_UnityBasics/)
 
-The WebGL build of a simple Unity project is at [https://pisan385.github.io/unity/WebGLBuild/](https://pisan385.github.io/unity/WebGLBuild/)
-
-- Creating and uploading a [Unity project to GitHub](unityprojectongithub.md)
+The WebGL build of a simple Unity project is at [https://cnotbohm.github.io/CSS385_UnityBasics/tree/main/docs/WebGLBuild](https://pisan385.github.io/unity/WebGLBuild/)
