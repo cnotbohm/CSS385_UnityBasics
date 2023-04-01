@@ -5,9 +5,11 @@ public class Player : MonoBehaviour
     public bool grounded = true;
     private Rigidbody2D rb2d;
     public float jumpPower;
+    public float moveSpeed;
     private BoxCollider2D boxCollider2D;
     [SerializeField] private LayerMask platformsLayerMask;
 
+    private float moveDirection;
     private int jumpCount;
     public int jumpCountMax;
 
@@ -35,12 +37,22 @@ public class Player : MonoBehaviour
                         jumpCount++;
                     }
                 }
+
+                if(Input.GetKeyDown(KeyCode.LeftArrow)) {  
+                    rb2d.velocity = Vector2.left * moveSpeed;
+                }
+
+                if(Input.GetKeyDown(KeyCode.RightArrow)) {  
+                    rb2d.velocity = Vector2.right * moveSpeed;
+                }
             }
         }
     }
+
 
     private bool IsGrounded() {
         RaycastHit2D raycastHit2D = Physics2D.BoxCast(boxCollider2D.bounds.center, boxCollider2D.bounds.size, 0f, Vector2.down, 0.1f, platformsLayerMask);
         return raycastHit2D.collider != null;
     }
+
 }
