@@ -19,16 +19,6 @@ public class Movement : MonoBehaviour
             pos.y -= speed * Time.deltaTime;
         }
 
-        if (Input.GetKey("d"))
-        {
-            pos.x += speed * Time.deltaTime;
-        }
-
-        if (Input.GetKey("a"))
-        {
-            pos.x -= speed * Time.deltaTime;
-        }
-
         transform.position = pos;
     }
 }
