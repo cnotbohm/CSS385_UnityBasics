@@ -10,14 +10,18 @@ public class Selection : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             BackButton();
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             NextButton();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            SubmitButton();
         }
     }
 
@@ -27,7 +31,7 @@ public class Selection : MonoBehaviour
         {
             currentlySelected++;
             Vector3 p = selectionArray[currentlySelected].transform.localPosition;
-            p.y -= 75f;
+            p.x -= 75f;
             selectedIndicator.transform.localPosition = p;
         }
     }
@@ -38,7 +42,7 @@ public class Selection : MonoBehaviour
         {
             currentlySelected--;
             Vector3 p = selectionArray[currentlySelected].transform.localPosition;
-            p.y -= 75f;
+            p.x -= 75f;
             selectedIndicator.transform.localPosition = p;
         }
     }
