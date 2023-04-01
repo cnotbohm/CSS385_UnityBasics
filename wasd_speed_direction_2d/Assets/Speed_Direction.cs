@@ -2,6 +2,7 @@
 
 public class Speed_Direction : MonoBehaviour {
     public float speed;
+    public float maxSpeed;
     public float rotateSpeed;
     private Rigidbody2D rb2d;
 
@@ -13,12 +14,16 @@ public class Speed_Direction : MonoBehaviour {
     void Update () {
         // Change Speed
         if (Input.GetKey(KeyCode.W)) {
-            speed += 0.1f;
+            if (speed + 0.02 > maxSpeed) {
+                speed = maxSpeed;
+            }
+            speed += 0.02f;
+            
         } else if (Input.GetKey(KeyCode.S)) {
-            if (speed - 2 < 0 ) {
+            if (speed - 1 < 0 ) {
                 speed = 0f;
             } else {
-                speed -= 0.1f;
+                speed -= 0.05f;
             }
         }
 
